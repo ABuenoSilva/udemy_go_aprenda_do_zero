@@ -48,4 +48,21 @@ func main() {
 	// O slice é como um ponteiro, então usa referência. Mudando o array de origem também muda o slice
 	array2[1] = "Mudei índice 1"
 	fmt.Println(slice2)
+
+	// Arrays internos
+	fmt.Println("--------------")
+	slice3 := make([]int, 3, 4) // Terceiro parâmetro (capacidade) é opcional, se omitida ela fica igual ao tamanho (segundo parâmetro)
+	fmt.Println(slice3)
+	fmt.Println(len(slice3)) //Tamanho (length)
+	fmt.Println(cap(slice3)) // Capacidade
+
+	slice3 = append(slice3, 7)
+	fmt.Println(slice3)
+	fmt.Println(len(slice3)) //Tamanho (length)
+	fmt.Println(cap(slice3)) // Capacidade
+
+	slice3 = append(slice3, 11) // Quando você estoura a capacidade, o Go referencia um novo array interno com o dobro da capacidade estourada (no caso aqui 8)
+	fmt.Println(slice3)
+	fmt.Println(len(slice3)) //Tamanho (length)
+	fmt.Println(cap(slice3)) // Capacidade
 }
