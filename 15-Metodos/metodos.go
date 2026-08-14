@@ -1,0 +1,33 @@
+package main
+
+import "fmt"
+
+type usuario struct {
+	nome  string
+	idade uint8
+}
+
+func (u usuario) salvar() {
+	fmt.Printf("Salvando usuário %s no banco.\n", u.nome)
+}
+
+func (u usuario) maiorDeIdade() bool {
+	return u.idade >= 18
+}
+
+func (u *usuario) fazerAniversario() {
+	u.idade++
+}
+
+func main() {
+	usuario1 := usuario{"Alexandre", 53}
+	usuario1.salvar()
+
+	fmt.Println("Usuário 1 maior de idade?", usuario1.maiorDeIdade())
+
+	usuario2 := usuario{"Zanza", 52}
+	usuario2.salvar()
+
+	usuario2.fazerAniversario()
+	fmt.Println("Idade ", usuario2.idade)
+}
