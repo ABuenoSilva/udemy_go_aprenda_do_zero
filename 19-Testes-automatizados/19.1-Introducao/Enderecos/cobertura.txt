@@ -1,0 +1,7 @@
+mode: set
+go_aprenda_do_zero/19-Testes-automatizados/Enderecos/enderecos.go:10.45,15.52 3 1
+go_aprenda_do_zero/19-Testes-automatizados/Enderecos/enderecos.go:15.52,17.3 1 1
+go_aprenda_do_zero/19-Testes-automatizados/Enderecos/enderecos.go:19.2,19.25 1 1
+go_aprenda_do_zero/19-Testes-automatizados/Enderecos/enderecos.go:22.34,23.17 1 1
+go_aprenda_do_zero/19-Testes-automatizados/Enderecos/enderecos.go:23.17,25.3 1 0
+go_aprenda_do_zero/19-Testes-automatizados/Enderecos/enderecos.go:26.2,28.22 3 1
