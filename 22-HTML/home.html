@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curso de Go - Home</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    h2 {
+      color: #333;
+    }
+    h4 {
+      color: #666;
+    }
+    </style>
+</head>
+<body>
+  <h2>Página Principal</h2>
+  <h4>Seja bem vindo, {{.Nome}}</h4>
+  <div class="button">
+    <button id="botao">Clique em mim!</button>
+  </div>
+  <script>
+    var botao = document.getElementById("botao");
+    botao.onclick = function() {
+      alert("Você clicou no botão!");
+    }
+  </script>  
+</body>
+</html>
